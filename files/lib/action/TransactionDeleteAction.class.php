@@ -69,8 +69,8 @@ class TransactionDeleteAction extends AbstractAction
             // Log the error
             \wcf\functions\exception\logThrowable($e);
 
-            // Show error message
-            WCF::getSession()->register('__transactionDeleteError', $e->getMessage());
+            // Show generic error message (don't expose internal details)
+            WCF::getSession()->register('__transactionDeleteError', true);
 
             // Redirect back to transaction list with error
             HeaderUtil::redirect(

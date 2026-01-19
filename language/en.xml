@@ -13,5 +13,8 @@
 		<item name="wcf.money.transaction.success.edit"><![CDATA[Transaction updated successfully.]]></item>
 		<item name="wcf.money.transaction.success.delete"><![CDATA[Transaction deleted successfully.]]></item>
 		<item name="wcf.money.transaction.error.notFound"><![CDATA[The requested transaction could not be found.]]></item>
+		<item name="wcf.money.transaction.error.add"><![CDATA[Failed to add transaction. Please try again.]]></item>
+		<item name="wcf.money.transaction.error.delete"><![CDATA[Failed to delete transaction. Please try again.]]></item>
+		<item name="wcf.money.transaction.error.load"><![CDATA[Failed to load transactions. Please try again later.]]></item>
 	</category>
 </language>

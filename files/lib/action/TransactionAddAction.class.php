@@ -83,8 +83,8 @@ class TransactionAddAction extends AbstractAction
             // Log the error
             \wcf\functions\exception\logThrowable($e);
 
-            // Show error message
-            WCF::getSession()->register('__transactionAddError', $e->getMessage());
+            // Show generic error message (don't expose internal details)
+            WCF::getSession()->register('__transactionAddError', true);
 
             // Redirect back to the add form with error
             HeaderUtil::redirect(

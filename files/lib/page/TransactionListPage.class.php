@@ -44,11 +44,11 @@ class TransactionListPage extends AbstractPage
             WCF::getSession()->unregister('__transactionDeleteSuccess');
         }
         if (WCF::getSession()->get('__transactionAddError')) {
-            $this->errorMessage = WCF::getSession()->get('__transactionAddError');
+            $this->errorMessage = WCF::getLanguage()->get('wcf.money.transaction.error.add');
             WCF::getSession()->unregister('__transactionAddError');
         }
         if (WCF::getSession()->get('__transactionDeleteError')) {
-            $this->errorMessage = WCF::getSession()->get('__transactionDeleteError');
+            $this->errorMessage = WCF::getLanguage()->get('wcf.money.transaction.error.delete');
             WCF::getSession()->unregister('__transactionDeleteError');
         }
 
@@ -80,8 +80,8 @@ class TransactionListPage extends AbstractPage
             // Log the database error
             \wcf\functions\exception\logThrowable($e);
 
-            // Set error message for display
-            $this->errorMessage = 'Failed to load transactions: ' . $e->getMessage();
+            // Set generic error message for display (don't expose internal details)
+            $this->errorMessage = WCF::getLanguage()->get('wcf.money.transaction.error.load');
 
             // Don't disrupt execution - show empty list instead
             $this->transactions = [];

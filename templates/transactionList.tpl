@@ -56,12 +56,12 @@
 						</td>
 						<td class="columnDigits">
 							{if $transaction->amount > 0}
-								<span style="color: green;">
+								<span class="badge green">
 									<fa-icon name="arrow-up"></fa-icon>
 									+{$transaction->amount|currency}
 								</span>
 							{else}
-								<span style="color: red;">
+								<span class="badge red">
 									<fa-icon name="arrow-down"></fa-icon>
 									{$transaction->amount|currency}
 								</span>

@@ -169,9 +169,9 @@ else
 fi
 
 # Check for language files
-if [ -d "language" ] && [ "$(ls -A language/*.xml 2>/dev/null)" ]; then
+if [ -d "language" ] && find language -name "*.xml" -type f | grep -q .; then
     check_pass "Language files exist"
-    LANG_COUNT=$(ls language/*.xml 2>/dev/null | wc -l)
+    LANG_COUNT=$(find language -name "*.xml" -type f | wc -l)
     echo "   Found $LANG_COUNT language file(s)"
 else
     check_warn "No language files found"

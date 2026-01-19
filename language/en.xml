@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/6.1/language.xsd" languagecode="en">
+	<category name="wcf.money">
+		<item name="wcf.money.transaction.list"><![CDATA[Transactions]]></item>
+		<item name="wcf.money.transaction.add"><![CDATA[Add Transaction]]></item>
+		<item name="wcf.money.transaction.edit"><![CDATA[Edit Transaction]]></item>
+		<item name="wcf.money.transaction.delete"><![CDATA[Delete Transaction]]></item>
+		<item name="wcf.money.transaction.amount"><![CDATA[Amount]]></item>
+		<item name="wcf.money.transaction.description"><![CDATA[Description]]></item>
+		<item name="wcf.money.transaction.category"><![CDATA[Category]]></item>
+		<item name="wcf.money.transaction.date"><![CDATA[Date]]></item>
+		<item name="wcf.money.transaction.success.add"><![CDATA[Transaction added successfully.]]></item>
+		<item name="wcf.money.transaction.success.edit"><![CDATA[Transaction updated successfully.]]></item>
+		<item name="wcf.money.transaction.success.delete"><![CDATA[Transaction deleted successfully.]]></item>
+		<item name="wcf.money.transaction.error.notFound"><![CDATA[The requested transaction could not be found.]]></item>
+		<item name="wcf.money.transaction.error.add"><![CDATA[Failed to add transaction. Please try again.]]></item>
+		<item name="wcf.money.transaction.error.delete"><![CDATA[Failed to delete transaction. Please try again.]]></item>
+		<item name="wcf.money.transaction.error.load"><![CDATA[Failed to load transactions. Please try again later.]]></item>
+		<item name="wcf.money.category.income"><![CDATA[Income]]></item>
+		<item name="wcf.money.category.expense"><![CDATA[Expense]]></item>
+		<item name="wcf.money.category.savings"><![CDATA[Savings]]></item>
+		<item name="wcf.money.category.investment"><![CDATA[Investment]]></item>
+	</category>
+</language>

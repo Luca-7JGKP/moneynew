@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS wcf1_transaction (
+	transactionID INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	userID INT(10) NOT NULL,
+	amount DECIMAL(10,2) NOT NULL,
+	description VARCHAR(255) NOT NULL DEFAULT '',
+	transactionDate INT(10) NOT NULL,
+	category VARCHAR(50) NOT NULL DEFAULT '',
+	KEY userID (userID)
+);

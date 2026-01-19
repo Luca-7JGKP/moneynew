@@ -73,10 +73,10 @@
 			</dt>
 			<dd>
 				<select id="category" name="category" class="medium">
-					<option value="income" {if $category|isset && $category == 'income'}selected{/if}>Income</option>
-					<option value="expense" {if $category|isset && $category == 'expense'}selected{/if}>Expense</option>
-					<option value="savings" {if $category|isset && $category == 'savings'}selected{/if}>Savings</option>
-					<option value="investment" {if $category|isset && $category == 'investment'}selected{/if}>Investment</option>
+					<option value="income" {if $category|isset && $category == 'income'}selected{/if}>{lang}wcf.money.category.income{/lang}</option>
+					<option value="expense" {if $category|isset && $category == 'expense'}selected{/if}>{lang}wcf.money.category.expense{/lang}</option>
+					<option value="savings" {if $category|isset && $category == 'savings'}selected{/if}>{lang}wcf.money.category.savings{/lang}</option>
+					<option value="investment" {if $category|isset && $category == 'investment'}selected{/if}>{lang}wcf.money.category.investment{/lang}</option>
 				</select>
 			</dd>
 		</dl>

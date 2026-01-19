@@ -16,5 +16,9 @@
 		<item name="wcf.money.transaction.error.add"><![CDATA[Failed to add transaction. Please try again.]]></item>
 		<item name="wcf.money.transaction.error.delete"><![CDATA[Failed to delete transaction. Please try again.]]></item>
 		<item name="wcf.money.transaction.error.load"><![CDATA[Failed to load transactions. Please try again later.]]></item>
+		<item name="wcf.money.category.income"><![CDATA[Income]]></item>
+		<item name="wcf.money.category.expense"><![CDATA[Expense]]></item>
+		<item name="wcf.money.category.savings"><![CDATA[Savings]]></item>
+		<item name="wcf.money.category.investment"><![CDATA[Investment]]></item>
 	</category>
 </language>

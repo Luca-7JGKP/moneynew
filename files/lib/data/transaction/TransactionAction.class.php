@@ -54,6 +54,9 @@ class TransactionAction extends AbstractDatabaseObjectAction
                 $data['userID'] = WCF::getUser()->userID;
             }
             
+            // Update parameters with modified data
+            $this->parameters['data'] = $data;
+            
             // Create the transaction with proper error handling
             $transaction = parent::create();
             

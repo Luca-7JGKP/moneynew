@@ -73,22 +73,10 @@
 			</dt>
 			<dd>
 				<select id="category" name="category" class="medium">
-					<option value="income" {if $category|isset && $category == 'income'}selected{/if}>
-						<fa-icon name="arrow-up"></fa-icon>
-						Income
-					</option>
-					<option value="expense" {if $category|isset && $category == 'expense'}selected{/if}>
-						<fa-icon name="arrow-down"></fa-icon>
-						Expense
-					</option>
-					<option value="savings" {if $category|isset && $category == 'savings'}selected{/if}>
-						<fa-icon name="piggy-bank"></fa-icon>
-						Savings
-					</option>
-					<option value="investment" {if $category|isset && $category == 'investment'}selected{/if}>
-						<fa-icon name="chart-line"></fa-icon>
-						Investment
-					</option>
+					<option value="income" {if $category|isset && $category == 'income'}selected{/if}>Income</option>
+					<option value="expense" {if $category|isset && $category == 'expense'}selected{/if}>Expense</option>
+					<option value="savings" {if $category|isset && $category == 'savings'}selected{/if}>Savings</option>
+					<option value="investment" {if $category|isset && $category == 'investment'}selected{/if}>Investment</option>
 				</select>
 			</dd>
 		</dl>

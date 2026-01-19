@@ -1,6 +1,6 @@
 <?php
 
-namespace wcf\action\transaction;
+namespace wcf\action;
 
 use wcf\action\AbstractAction;
 use wcf\data\transaction\Transaction;
